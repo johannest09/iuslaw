@@ -1,0 +1,49 @@
+{
+  "HOME": {
+    "TITLE": "Hello Angular 2 with ng2-translate!",
+    "SELECT": "Change language"
+  },
+
+  "ROUTES.lawyers": "lawyers",
+  "ROUTES.lawyer": "lawyer",
+  "ROUTES.practice-areas": "practice-areas",
+  "ROUTES.practice": "practice",
+  "ROUTES.about": "about",
+  "ROUTES.posts": "posts",
+  "ROUTES.post": "post",
+  "ROUTES.contact": "contact-us",
+
+  "NAVIGATION": {
+        "LAWYERS": "Lawyers",
+        "PRACTICE-AREAS": "Practice areas",
+        "NEWS": "News",
+        "ABOUT": "About"
+  },
+
+  "POST": "post",
+  "NEWS": {
+    "TITLE": "News and articles"
+  },
+  "EMPLOYEE": "employee",
+  "LAWYER": "lawyer",
+  "PRACTICEAREAS": "practice areas",
+  "PRACTICEAREA": "practice area",
+  "EMPLOYEES": {
+        "EMPLOYEES": "Employees",
+        "SPECIALITY": "Speciality",
+        "SPECIALTIES": "Specialties",
+        "ROLES": "Roles",
+        "MORE": "More"
+    },
+    "IUSLAW": "IUS lawfirm",
+    "LAWFIRM": "law firm",
+    "READMORE": "Read more",
+    "LAWYERLIST": "See all lawyers",
+    "PRACTICEAREALIST": "See all practice areas",
+    "GOBACK": "Go back",
+    "FRONTPAGEBANNERQUOTE": "Good service and professionalism as a guiding principle",
+    "SEEMAP": "See map",
+    "CONTACTUS": "Contact us"
+
+}
+

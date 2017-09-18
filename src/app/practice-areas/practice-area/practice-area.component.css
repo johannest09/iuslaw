@@ -1,0 +1,15 @@
+@media (max-width: 650px) {
+  #banner .banner-image {
+    background-position: -340px -180px;
+  }
+}
+article {
+  margin-bottom: 50px;
+}
+@media (min-width: 769px) {
+  article .description {
+    padding-right: 20%;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,24 @@
+<div id="banner">
+    <div class="banner-image">
+        <div class="container">
+            <div class="row">
+            <div class="col-sm-12 col-md-10">
+                <h1 class="animated">{{'ABOUTIUS' | translate}}</h1>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main id="main" role="main">
+    <div class="container">
+        <div *ngFor="let a of about">
+            <ng-container *ngIf="_selectedlanguage == 'is'">
+                <div [innerHtml]="a.content.rendered"></div>
+            </ng-container>
+            <ng-container *ngIf="_selectedlanguage == 'en'">
+                <div [innerHtml]="a.acf['about_ius_description_english']"></div>
+            </ng-container>
+        </div>
+    </div>
+</main>

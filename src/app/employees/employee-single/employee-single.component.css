@@ -1,0 +1,124 @@
+#banner.banner-employees .banner-image {
+  background-image: url("/assets/images/backgrounds/books_2.jpg");
+}
+#banner.banner-employees .banner-image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 27, 31, 0.7);
+  position: absolute;
+}
+@media (max-width: 650px) {
+  #banner.banner-employees .banner-image {
+    background-position: center -200px;
+  }
+}
+.card {
+  margin: 10px 0;
+}
+.card img {
+  max-width: 182px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .card img {
+    margin: 0;
+  }
+}
+.card header {
+  position: relative;
+  /*
+        .jobtitle {
+            
+            
+            color: #2f2f2f;
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+
+            margin-left: 23px;
+            position: relative;
+
+            @media(min-width: 768px) {
+                position: absolute;
+                top: 15px;
+                right: 5px;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                font-size: 20px;
+                display: inline;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+
+            &:before {
+                height: 8px;
+                width: 8px;
+                content: "";
+                background: #b5ae8a;
+                display: inline-block;
+                margin-right: 10px;
+                position: absolute;
+                left: -22px;
+                top: 8px;
+                border-radius: 2px;
+            }
+        }
+        */
+}
+.card header h1 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 8px !important;
+  border-bottom: 1px solid #b5ae8a !important;
+}
+@media (max-width: 767px) {
+  .card header h1 {
+    font-size: 28px;
+  }
+}
+.card header h1 .jobtitle {
+  font-family: "Lato", "sans-serif";
+  position: relative;
+  letter-spacing: 0.2px;
+  display: block;
+  font-size: 18px;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  .card header h1 .jobtitle {
+    display: inline;
+    font-size: 21px;
+    margin: 0 0 0 25px;
+  }
+  .card header h1 .jobtitle:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #2f2f2f;
+  }
+}
+.card .contact-details {
+  margin-bottom: 25px;
+}
+.card .contact-details .position {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+.card .contact-details .email {
+  display: inline-block;
+}
+.card .description {
+  line-height: 1.65em;
+}
+@media (max-width: 767px) {
+  .btn {
+    float: none !important;
+    display: block;
+    padding: 15px 0;
+  }
+}

@@ -1,0 +1,33 @@
+@import '../../../styles/variables-ius';
+
+
+#banner.banner-news {
+    .banner-image {
+        background-image: url("/assets/images/backgrounds/books_1.jpg");
+        background-position: center -240px;
+
+        @media(max-width: 650px) {
+            background-position: center -140px;
+        }
+    }
+}
+
+
+.news-item {
+    h1 {
+        margin-bottom: 10px !important;
+    }
+    .date { 
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        margin-bottom: 30px;
+        &:before {
+            content: " ";
+            width: 10px;
+            height: 10px;
+            background: @secondary-color;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+}

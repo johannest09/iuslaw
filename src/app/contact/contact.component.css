@@ -1,0 +1,11 @@
+p {
+  margin-bottom: 40px;
+}
+.tel,
+.mail {
+  margin-bottom: 10px;
+}
+.tel i,
+.mail i {
+  margin-right: 10px;
+}

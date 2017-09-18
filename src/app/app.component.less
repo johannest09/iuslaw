@@ -1,0 +1,329 @@
+
+@import '../styles/variables-ius';
+
+.navbar {
+    
+    @media(min-width: 769px) {
+        position: fixed;
+        width: 100%;
+        top: 0;
+
+    }
+
+    z-index: 1;
+    background-color: @primary-color;
+    border-radius: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 0;
+    .nav-link { padding: 0; }
+
+    .fw-container {
+        display: table;
+        box-sizing: border-box;
+        margin: 0 auto;
+        height: 70px;
+
+        .wrap-logo {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 30px;
+            text-align: center;
+            a { 
+                &:hover,
+                &:active,
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+            .logo {
+                padding: 10px 20px;
+                color: @secondary-color;
+                padding: 10px 20px;
+                font-weight: 400;
+                text-transform: uppercase;
+                .upper { 
+                    font-size: 26px;
+                    font-weight: 500;
+                }
+                .lower { 
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: 1px; 
+                }
+            }
+        }
+
+        .fw-nav-wrap {
+            display: table-cell;
+            vertical-align: middle;
+
+            .fw-nav-menu {
+                display: none;
+                letter-spacing: 2px;
+                font-size: 13px;
+                padding-left: 0;
+                margin-right: 0;
+            }
+
+            &.fw-nav-left {
+                .fw-nav-menu {
+                    float: right;
+                }
+            }
+            &.fw-nav-right {
+                .fw-nav-menu {
+                    float: left;
+                }
+            }
+
+            nav.fw-site-navigation {
+                font-size: 0;
+                box-sizing: border-box;
+
+                ul.fw-nav-menu {
+                    font-size: 13px;
+                    list-style:none;
+                    margin: 0 auto;
+                    padding: 0;
+                    
+                    padding-left: 0;
+                    margin-right: 0;
+
+                    > li {
+                        float: left;
+                        position: relative;
+                        border-bottom: none;
+                        &:first-child > a { margin-left: 0; }
+                        > a {
+                            display: inline-block;
+                            padding:10px;
+                            margin-left: 50px;
+                            text-transform: uppercase;
+                            color: #fff;
+                            position: relative;
+                            text-decoration: none;
+                            font-weight: 400;
+                            -webkit-transition: all 0.2s ease 0s;
+                            -o-transition: all 0.2s ease 0s;
+                            transition: all 0.2s ease 0s;
+
+                            &:hover, &.router-link-active {
+                                &:after {
+                                    width: 100%;
+                                    margin-left: -50%;
+                                    background-color: #fff !important;
+                                    width: 100%;
+                                    height: 2px;
+                                }
+                            }
+                            
+                            &:after {
+                                content: "";
+                                bottom: 0;
+                                height: 1px;
+                                left: 50%;
+                                position: absolute;
+                                width: 0;
+
+                                -webkit-transition: all 0.2s ease 0s;
+                                -o-transition: all 0.2s ease 0s;
+                                transition: all 0.2s ease 0s;
+                            }
+
+                            &.router-link-active {
+                                //color: #214042;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    ul.language-select {
+        display: none;
+        @media(min-width: 481px) {
+            display: block;
+        }
+        list-style: none;
+        position: absolute;
+        top: 26px;
+        right: 20px;
+        padding: 0;
+        z-index: 10;
+        li { 
+            float: left;
+            a {
+                text-transform: uppercase;
+                color: #fff;
+                margin: 0 5px;
+                padding: 10px 12px; 
+                font-size: 13px;
+                letter-spacing: 0.8px;
+                -webkit-transition-duration: 300ms;
+                transition-duration: 300ms;
+                &:hover {
+                    color: #b5ae8a;
+                }
+            }
+        }
+        @media screen and (min-width: 992px) {
+            right: 100px;
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+            //top: 210px;
+            //right: 40px;
+            right: 40px;
+            /*
+            li a {
+                    text-transform: uppercase;
+                    color: #1c1c1c;
+                    margin: 0 5px;
+                    padding: 8px 10px;
+                    background: #ffffff;
+                    width: 45px;
+                    display: block;
+                    float: left;
+                    text-align: center;
+                    border-radius: 3px;
+            }
+            */
+        }
+        /*
+        @media screen and (max-width: 480px) {
+            //top: 210px;
+            //right: 20px;
+            li a {
+                    text-transform: uppercase;
+                    color: #1c1c1c;
+                    margin: 0 5px;
+                    padding: 8px;
+                    background: #ffffff;
+                    width: 42px;
+                    display: block;
+                    float: left;
+                    text-align: center;
+                    border-radius: 3px;
+            }
+        }
+        */
+    }
+    
+}
+
+.menu-link { 
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+}
+#menu {
+    background: @primary-color;
+    border-right: 1px solid @secondary-color;
+    .logo {
+        height: 74px;
+        padding: 10px 20px;
+        color: @secondary-color;
+        font-weight: 400;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        .upper { font-size: 26px; }
+        .lower { font-size: 12px; letter-spacing: 1px }
+    }
+
+    div.language {
+        @media(min-width: 480px) {
+            display: none;
+        }
+        padding: 10px 20px;
+        margin-top: 30px;
+        
+        h3 {
+            font-family: "Raleway", helvetica, arial, sans-serif;
+            color: #fff;
+            font-size: 18px;
+            opacity: 0.7;
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            a { 
+                color: #f4f4f4; 
+                padding: 20px;
+                cursor: pointer;
+                display: block;
+                border-bottom: 1px solid @secondary-color;
+                text-transform: uppercase;
+                letter-spacing: 0.2px;
+                font-size: 14px;
+                &:hover {
+                    text-decoration: none;
+                    background: lighten(@primary-color, 10%);
+                }
+            }
+        }
+        &.language-select {
+
+            
+            margin-top: 30px;
+            li a {
+
+                border-bottom: 0;
+                text-transform: uppercase;
+                color: #fff;
+                margin: 0 5px;
+                padding: 8px 10px;
+                border: 1px solid #fff;
+                width: 45px;
+                display: block;
+                float: left;
+                text-align: center;
+                border-radius: 3px;
+            }
+        }
+    }
+    &.panel {
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+        z-index: 9999;
+        position: fixed;
+        left: -15.625em; /*left or right and the width of your navigation panel*/
+        width: 15.625em; /*should match the above value*/
+
+    }
+}
+.wrap { position: relative; }
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #menu, .menu-link { display: none; }
+    .navbar {
+        .fw-container {
+            .fw-nav-wrap {
+                .fw-nav-menu { display: block; }
+            }
+        }
+    }
+    
+    
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}

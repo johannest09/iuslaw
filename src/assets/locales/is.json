@@ -1,0 +1,44 @@
+{
+    "ROUTES.employees": "starfsfolk",
+    "ROUTES.employee": "starfsmadur",
+    "ROUTES.practice-areas": "starfssvid",
+    "ROUTES.practice": "svid",
+    "ROUTES.about": "um-ius",
+    "ROUTES.posts": "frettir",
+    "ROUTES.post": "frett",
+    "ROUTES.contact": "hafdu-samband",
+    "NAVIGATION": {
+        "EMPLOYEES": "Starfsfólk",
+        "PRACTICE-AREAS": "Starfssvið",
+        "NEWS": "Fréttir",
+        "ABOUT": "Um"
+    },
+    "POST": "frett",
+    "EMPLOYEE": "starfsmadur",
+    "NEWS": {
+        "TITLE": "Fréttir"
+    },
+    "LAWYER": "logmadur",
+    "PRACTICEAREAS": "Starfssvið",
+    "PRACTICEAREA": "Starfssvið",
+    "EMPLOYEES": {
+        "EMPLOYEES": "Starfsfólk",
+        "SPECIALITY": "Sérsvið",
+        "SPECIALTIES": "Sérsvið",
+        "ROLES": "Staða",
+        "MORE": "Nánar"
+    },
+    "IUSLAW": "IUS lögmannsstofa",
+    "LAWFIRM": "lögmannsstofa",
+    "READMORE": "Nánar",
+    "EMPLOYEELIST": "Sjá allt starfsfólk",
+    "PRACTICEAREALIST": "Sjá öll starfssvið",
+    "GOBACK": "Til baka",
+    "FRONTPAGEBANNERQUOTE": "Fagleg og vönduð þjónusta að leiðarljósi",
+    "SEEMAP": "Sjá á korti",
+    "CONTACTUS": "Hafðu samband",
+    "CONTACTUSTEXT": "Ef þú hefur fyrirspurnir eða erindi hafðu þá samband við okkur:",
+    "CONTACTUSPHONE": "S: 896-2668",
+    "ABOUTIUS": "Um okkur",
+    "NEWSLIST": "Sjá allar fréttir"
+}

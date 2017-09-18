@@ -1,0 +1,310 @@
+@font-face {
+  font-family: 'ionicons';
+  src: url('../assets/fonts/ionicons.eot');
+  src: url('../assets/fonts/ionicons.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/ionicons.woff') format('woff'), url('../assets/fonts/ionicons.ttf') format('truetype'), url('../assets/fonts/ionicons.svg#') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 15px;
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  color: #1f2e3a;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  padding-bottom: 280px;
+  position: relative;
+  font-weight: 500;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  margin-top: 0;
+}
+p {
+  margin: 0 0 16px;
+}
+.m-t-5 {
+  margin-top: 5px;
+}
+.m-t-10 {
+  margin-top: 10px;
+}
+.m-t-15 {
+  margin-top: 15px;
+}
+.m-t-20 {
+  margin-top: 20px;
+}
+.m-b-5 {
+  margin-bottom: 5px;
+}
+.m-b-10 {
+  margin-bottom: 10px;
+}
+.m-b-15 {
+  margin-bottom: 15px;
+}
+.m-b-20 {
+  margin-bottom: 20px;
+}
+/* BUTTONS */
+.btn {
+  background: #2f2f2f;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-weight: 500;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+}
+.btn:hover {
+  background: #494949;
+  color: #fff;
+}
+.btn.btn-sm {
+  letter-spacing: 0.5px;
+}
+.btn-primary.active,
+.btn-primary:active,
+.btn-primary.focus,
+.btn-primary:focus {
+  background: #2f2f2f !important;
+}
+#banner {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  background-color: rgba(54, 64, 74, 0.4);
+}
+@media (min-width: 769px) {
+  #banner {
+    margin-top: 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #banner {
+    height: 300px;
+  }
+  #banner.big {
+    height: 400px;
+  }
+  #banner h1 {
+    margin-top: 60px;
+  }
+}
+#banner .banner-image {
+  background-image: url("../assets/images/backgrounds/turn_10.jpg");
+  background-position: center bottom;
+  background-size: 300%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+@media (min-width: 769px) {
+  #banner .banner-image {
+    background-attachment: fixed;
+    background-position: center -370px;
+    background-size: cover;
+  }
+}
+#banner .banner-overlay {
+  -webkit-animation-delay: 500ms;
+  -moz-animation-delay: 500ms;
+  -o-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+#banner h1 {
+  color: #fff;
+  font-size: 54px;
+  padding: 20px 20px 20px 0;
+  display: inline-block;
+  margin-top: 80px;
+  letter-spacing: 1px;
+}
+@media (max-width: 1200px) {
+  #banner h1 {
+    margin-top: 40px;
+    font-size: 48px;
+  }
+}
+#banner.big {
+  background-color: transparent;
+  color: #fff;
+}
+#banner.big:after {
+  background-position: bottom center;
+}
+#banner.big .banner-overlay {
+  padding: 20px 0;
+  margin-top: 100px;
+  max-width: 500px;
+  display: none;
+}
+@media (min-width: 768px) {
+  #banner.big .banner-overlay h2 {
+    font-size: 48px;
+    line-height: 62px;
+    color: #fff;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  #banner.big {
+    height: 300px;
+  }
+  #banner.big .banner-overlay {
+    margin-top: 50px;
+  }
+  #banner.big .banner-overlay h2 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 768px) {
+  #banner.big {
+    height: 200px;
+  }
+  #banner.big .banner-overlay {
+    margin-top: 30px;
+  }
+  #banner.big .banner-overlay h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+a {
+  color: #7f6f52;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #626262;
+  text-decoration: none;
+}
+#main > .container {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+@media (min-width: 768px) {
+  #main > .container {
+    padding-top: 60px;
+  }
+}
+#main > .container ul {
+  margin-bottom: 20px;
+}
+#main > .container ul li {
+  margin: 15px 0;
+}
+#main > .container h1 {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+#main > .container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #main > .container h2 {
+    font-size: 32px;
+  }
+}
+#main > .container.news-item a.btn {
+  margin-top: 30px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #1f1f1f;
+  background: #2f2f2f;
+  color: #fff;
+  font-weight: 400;
+}
+@media (max-width: 650px) {
+  footer {
+    text-align: center;
+  }
+}
+footer h4 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  font-weight: 300;
+  color: #a79677;
+}
+footer h4 strong {
+  font-weight: 500;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover,
+footer a.focus,
+footer a:active {
+  color: #ccc;
+  text-decoration: none;
+}
+footer .loc {
+  margin-bottom: 10px;
+}
+@media (max-width: 650px) {
+  footer .loc {
+    margin-bottom: 20px;
+    font-size: 0.75em;
+  }
+}
+footer .see-map i {
+  margin-right: 10px;
+}
+@media (max-width: 650px) {
+  footer .see-map {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+footer .mail {
+  display: table-row;
+  margin-top: 10px;
+}
+@media (max-width: 650px) {
+  footer .mail {
+    display: inline-block;
+    float: none !important;
+  }
+}
+footer .mail a {
+  display: block;
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  transition: all 200ms;
+}
+footer .mail a:hover,
+footer .mail a:active,
+footer .mail a:focus {
+  color: #f3f3f3;
+  background: #494949;
+  text-decoration: none;
+}
+footer .mail a i,
+footer .mail a span {
+  display: table-cell;
+  vertical-align: middle;
+}
+footer .mail a i {
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+footer .mail a span {
+  padding-left: 20px;
+}

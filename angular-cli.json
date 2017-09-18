@@ -18,9 +18,15 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../src/js/lib/jquery-3.2.1.js",
+        "../src/js/lib/bigslide.js",
+        "../src/js/map.js",
+        "../src/js/app.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",

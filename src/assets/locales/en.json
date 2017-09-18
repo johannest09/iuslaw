@@ -1,0 +1,44 @@
+{
+  "ROUTES.employees": "employees",
+  "ROUTES.employee": "employee",
+  "ROUTES.practice-areas": "practice-areas",
+  "ROUTES.practice": "practice",
+  "ROUTES.about": "about",
+  "ROUTES.posts": "posts",
+  "ROUTES.post": "post",
+  "ROUTES.contact": "contact-us",
+  "NAVIGATION": {
+    "EMPLOYEES": "The team",
+    "PRACTICE-AREAS": "Practice areas",
+    "NEWS": "News",
+    "ABOUT": "About"
+  },
+  "POST": "post",
+  "NEWS": {
+    "TITLE": "News"
+  },
+  "EMPLOYEE": "employee",
+  "LAWYER": "lawyer",
+  "PRACTICEAREAS": "Practice areas",
+  "PRACTICEAREA": "Practice area",
+  "EMPLOYEES": {
+    "EMPLOYEES": "The team",
+    "SPECIALITY": "Speciality",
+    "SPECIALTIES": "Specialties",
+    "ROLES": "Roles",
+    "MORE": "More"
+  },
+  "IUSLAW": "IUS lawfirm",
+  "LAWFIRM": "law offices",
+  "READMORE": "Read more",
+  "EMPLOYEELIST": "See all of our people",
+  "PRACTICEAREALIST": "See all practice areas",
+  "GOBACK": "Go back",
+  "FRONTPAGEBANNERQUOTE": "Good service and professionalism as a guiding principle",
+  "SEEMAP": "See map",
+  "CONTACTUS": "Contact us",
+  "CONTACTUSTEXT": "Be welcome to contact us if you have any questions or concerns:",
+  "CONTACTUSPHONE": "tel: (+354) 896-2668",
+  "ABOUTIUS": "About us",
+  "NEWSLIST": "See all news"
+}

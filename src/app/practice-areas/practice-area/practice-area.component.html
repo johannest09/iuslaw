@@ -1,0 +1,43 @@
+<div id="banner">
+  <div class="banner-image">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h1>{{ 'PRACTICEAREAS' | translate }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<main id="main" role="main">
+  <div *ngIf="practiceArea" class="container">
+    
+    <article>
+        <header>
+          <h2>
+            <ng-container *ngIf="_selectedlanguage == 'is'">
+                {{ practiceArea.title.rendered }}
+            </ng-container>
+            <ng-container *ngIf="_selectedlanguage == 'en'">
+                {{ practiceArea.acf['title_english'] }}
+            </ng-container>
+          </h2>
+          
+        </header>
+        <div class="description">
+          <ng-container *ngIf="_selectedlanguage == 'is'">
+            <div [innerHtml]="practiceArea.content.rendered"></div>
+          </ng-container>
+          <ng-container *ngIf="_selectedlanguage == 'en'">
+            <div [innerHtml]="practiceArea.acf['description_english']"></div>
+          </ng-container>
+        </div>
+    </article>
+    <div class="m-t-20">
+      <a href="javascript:;" [routerLink]="'/practice-areas' | localize" class="btn btn-primary pull-right">{{ 'PRACTICEAREALIST' | translate }}</a>
+    </div>
+
+  </div>
+</main>

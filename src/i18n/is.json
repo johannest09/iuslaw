@@ -1,0 +1,47 @@
+{
+    "HOME": {
+        "TITLE": "Halló Angular2 með ng2-translate!",
+        "SELECT": "Veldu tungumál"
+    },
+    "ROUTES.lawyers": "logmenn",
+    "ROUTES.lawyer": "logmadur",
+    "ROUTES.practice-areas": "starfssvid",
+    "ROUTES.practice": "svid",
+    "ROUTES.about": "um-ius",
+    "ROUTES.posts": "frettir",
+    "ROUTES.post": "frett",
+    "ROUTES.contact": "hafdu-samband",
+
+    "NAVIGATION": {
+        "LAWYERS": "Lögmenn",
+        "PRACTICE-AREAS": "Starfssvið",
+        "NEWS": "Fréttir",
+        "ABOUT": "Um"
+    },
+
+    "POST": "frett",
+    "EMPLOYEE": "starfsmadur",
+    "NEWS": {
+        "TITLE": "Fréttir og greinar"
+    },
+    "LAWYER": "logmadur",
+    "PRACTICEAREAS": "starfssvið",
+    "PRACTICEAREA": "starfssvið",
+    "EMPLOYEES": {
+        "EMPLOYEES": "Starfsfólk",
+        "SPECIALITY": "Sérsvið",
+        "SPECIALTIES": "Sérsvið",
+        "ROLES": "Staða",
+        "MORE": "Nánar"
+    },
+    "IUSLAW": "IUS lögmannsstofa",
+    "LAWFIRM": "lögmannsstofa",
+    "READMORE": "Nánar",
+    "LAWYERLIST": "Sjá alla lögmenn",
+    "PRACTICEAREALIST": "Sjá öll starfssvið",
+    "GOBACK": "Til baka",
+    "FRONTPAGEBANNERQUOTE": "Góð þjónusta og fagmennska að leiðarljósi",
+    "SEEMAP": "Sjá á korti",
+    "CONTACTUS": "Hafðu samband"
+  
+}

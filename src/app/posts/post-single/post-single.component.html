@@ -1,0 +1,31 @@
+
+
+<div id="banner" class="banner-news">
+  <div class="banner-image">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-10">
+          <h1>{{'NEWS.TITLE' | translate}}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="main" role="main">
+  <div *ngIf="post" class="news-item container">
+
+    <h1>{{ post.title.rendered }}</h1>
+
+    <div class="date">{{ post.date | date: 'dd.MM.yyyy'}}</div>
+    <div [innerHtml]="post.content.rendered"></div>
+
+    <div class="m-t-20 pull-right">
+      <a href="javascript:;" [routerLink]="'/posts' | localize" class="btn btn-primary">{{ 'NEWSLIST' | translate }}</a>
+    </div>
+  </div>
+
+</main>
+
+
+

@@ -1,0 +1,46 @@
+@import '../../../styles/variables-ius';
+
+#banner.banner-news {
+    .banner-image {
+        background-image: url("/assets/images/backgrounds/books_1.jpg");
+        background-position: center -240px;
+
+        @media(max-width: 650px) {
+            background-position: center -140px;
+        }
+    }
+}
+
+ul.news {
+    padding: 0;
+    list-style: none;
+    li.news-item {
+        list-style: none;
+        border-bottom: 1px dashed #c1c1c1;
+        padding-bottom: 30px;
+        margin-bottom: 30px !important;
+        position: relative;
+        h3 a { color: @primary-color; }
+        .date { 
+            font-size: 14px; 
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+            &:before {
+                content: " ";
+                width: 10px;
+                height: 10px;
+                background: @secondary-color;
+                display: inline-block;
+                margin-right: 10px;
+                border-radius: 2px;
+            }
+        }
+        .read-more { 
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 5px;
+        }
+    }
+}

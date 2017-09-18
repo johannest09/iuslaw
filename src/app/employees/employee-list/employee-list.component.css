@@ -1,0 +1,77 @@
+#banner.banner-employees .banner-image {
+  background-image: url("/assets/images/backgrounds/books_2.jpg");
+}
+#banner.banner-employees .banner-image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 27, 31, 0.7);
+  position: absolute;
+}
+@media (max-width: 650px) {
+  #banner.banner-employees .banner-image {
+    background-position: center -200px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  #employees .row:before,
+  #employees .row:after {
+    display: inline;
+    content: "";
+  }
+  #employees .row:after {
+    clear: none;
+  }
+}
+article.employee {
+  position: relative;
+  margin-bottom: 20px;
+  min-height: 140px;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+}
+article.employee:before,
+article.employee:after {
+  content: " ";
+  display: table;
+}
+article.employee:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  article.employee {
+    margin-bottom: 60px;
+  }
+}
+article.employee figure {
+  float: left;
+  margin-right: 15px;
+  padding-right: 10px;
+}
+article.employee figure img {
+  max-width: 113px;
+  height: 140px;
+}
+article.employee aside {
+  min-height: 130px;
+  padding: 10px 0;
+  font-size: 15px;
+}
+article.employee aside h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+article.employee aside .position {
+  margin-bottom: 10px;
+}
+article.employee aside .email {
+  display: block;
+  margin-bottom: 10px;
+}
+article.employee aside .employee-details {
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+}

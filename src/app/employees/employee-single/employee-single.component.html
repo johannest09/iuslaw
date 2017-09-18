@@ -1,0 +1,74 @@
+
+<div id="banner" class="banner-employees">
+  <div class="banner-image">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h1 class="animated">{{ 'EMPLOYEES.EMPLOYEES' | translate }}</h1>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<main id="main" role="main">
+  <div *ngIf="employee" class="container">
+    
+    <article class="card">
+
+      <div class="row">
+
+        <div class="col-md-3">
+          <img src="{{employee._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}}" />
+        </div>
+
+        <div class="col-md-9">
+          
+          <header>
+            <h1>
+              {{ employee.title.rendered }}
+              <ng-container *ngIf="_selectedlanguage == 'is' && employee.acf['jobtitle_icelandic']">
+                  <span class="jobtitle">{{ employee.acf['jobtitle_icelandic'] }}</span>
+              </ng-container>
+              <ng-container *ngIf="_selectedlanguage == 'en' && employee.acf['jobtitle_english']">
+                  <span class="jobtitle">{{ employee.acf['jobtitle_english'] }}</span>
+              </ng-container>
+            </h1>
+          </header>
+          <div class="contact-details">
+            <ng-container *ngIf="_selectedlanguage == 'is' && employee.acf['entitlement_icelandic']">
+                <div class="position">{{ employee.acf['entitlement_icelandic'] }}</div>
+            </ng-container>
+            <ng-container *ngIf="_selectedlanguage == 'en' && employee.acf['entitlement_english']">
+              <div class="position">{{ employee.acf['entitlement_english'] }}</div>
+            </ng-container>
+            <a href="mailto:{{ employee.acf['email']}}" class="email">{{ employee.acf['email'] }}</a>
+          </div>
+          <div class="description">
+
+            <ng-container *ngIf="_selectedlanguage == 'is'">
+              <div [innerHtml]="employee.content.rendered"></div>
+            </ng-container>
+            <ng-container *ngIf="_selectedlanguage == 'en'">
+              <div [innerHtml]="employee.acf['description_english']"></div>
+            </ng-container>
+
+          </div>
+            
+        </div>
+
+      </div><!-- end row -->
+    </article>
+        
+  
+    <div class="m-t-20">
+      <a href="javascript:;" [routerLink]="'/employees' | localize" class="btn btn-primary pull-right">{{ 'EMPLOYEELIST' | translate }}</a>
+    </div>
+    
+
+  </div>
+</main>
+
+
+
+

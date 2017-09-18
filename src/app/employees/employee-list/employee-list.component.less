@@ -1,0 +1,75 @@
+@import '../../../styles/mixins';
+
+#banner.banner-employees {
+    .banner-image {
+        background-image: url("/assets/images/backgrounds/books_2.jpg");
+        &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(25, 27, 31, 0.7);
+            position: absolute;
+        }
+        @media(max-width: 650px) {
+            background-position: center -200px;
+        }
+    }
+}
+
+#employees {
+
+    @media screen and (min-width: 991px) and (max-width: 1200px) {
+        .row {
+            &:before, &:after {
+                display: inline;
+                content:"";
+
+            }
+            &:after { clear: none; }
+        }
+    }
+}
+
+article.employee {
+    .clearfix();
+    
+    position: relative;
+    margin-bottom: 20px;
+    @media(min-width: 768px) {
+        margin-bottom: 60px;
+    }
+    min-height: 140px;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    figure {
+        float: left;
+        margin-right: 15px;
+        padding-right: 10px;
+        img { 
+            max-width: 113px;
+            height: 140px;
+        }
+    }
+
+    aside {
+        min-height: 130px;
+        padding: 10px 0;
+        font-size: 15px;
+        h3 { 
+            margin-top: 0;
+            margin-bottom: 5px; 
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .position { margin-bottom: 10px; }
+        .email { display: block; margin-bottom: 10px; }
+        .employee-details {
+            position: absolute;
+            right: 15px;
+            bottom: 5px;
+        }
+    }
+
+    
+    
+}

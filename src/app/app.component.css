@@ -1,0 +1,290 @@
+.navbar {
+  z-index: 1;
+  background-color: #2f2f2f;
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 0;
+}
+@media (min-width: 769px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+}
+.navbar .nav-link {
+  padding: 0;
+}
+.navbar .fw-container {
+  display: table;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 70px;
+}
+.navbar .fw-container .wrap-logo {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 30px;
+  text-align: center;
+}
+.navbar .fw-container .wrap-logo a:hover,
+.navbar .fw-container .wrap-logo a:active,
+.navbar .fw-container .wrap-logo a:focus {
+  text-decoration: none;
+}
+.navbar .fw-container .wrap-logo .logo {
+  color: #a79677;
+  padding: 10px 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.navbar .fw-container .wrap-logo .logo .upper {
+  font-size: 26px;
+  font-weight: 500;
+}
+.navbar .fw-container .wrap-logo .logo .lower {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.navbar .fw-container .fw-nav-wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+.navbar .fw-container .fw-nav-wrap .fw-nav-menu {
+  display: none;
+  letter-spacing: 2px;
+  font-size: 13px;
+  padding-left: 0;
+  margin-right: 0;
+}
+.navbar .fw-container .fw-nav-wrap.fw-nav-left .fw-nav-menu {
+  float: right;
+}
+.navbar .fw-container .fw-nav-wrap.fw-nav-right .fw-nav-menu {
+  float: left;
+}
+.navbar .fw-container .fw-nav-wrap nav.fw-site-navigation {
+  font-size: 0;
+  box-sizing: border-box;
+}
+.navbar .fw-container .fw-nav-wrap nav.fw-site-navigation ul.fw-nav-menu {
+  font-size: 13px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 0;
+  margin-right: 0;
+}
+.navbar .fw-container .fw-nav-wrap nav.fw-site-navigation ul.fw-nav-menu > li {
+  float: left;
+  position: relative;
+  border-bottom: none;
+}
+.navbar .fw-container .fw-nav-wrap nav.fw-site-navigation ul.fw-nav-menu > li:first-child > a {
+  margin-left: 0;
+}
+.navbar .fw-container .fw-nav-wrap nav.fw-site-navigation ul.fw-nav-menu > li > a {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+  font-weight: 400;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+.navbar .fw-container .fw-nav-wrap nav.fw-site-navigation ul.fw-nav-menu > li > a:hover:after,
+.navbar .fw-container .fw-nav-wrap nav.fw-site-navigation ul.fw-nav-menu > li > a.router-link-active:after {
+  margin-left: -50%;
+  background-color: #fff !important;
+  width: 100%;
+  height: 2px;
+}
+.navbar .fw-container .fw-nav-wrap nav.fw-site-navigation ul.fw-nav-menu > li > a:after {
+  content: "";
+  bottom: 0;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  width: 0;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+.navbar ul.language-select {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 26px;
+  right: 20px;
+  padding: 0;
+  z-index: 10;
+  /*
+        @media screen and (max-width: 480px) {
+            //top: 210px;
+            //right: 20px;
+            li a {
+                    text-transform: uppercase;
+                    color: #1c1c1c;
+                    margin: 0 5px;
+                    padding: 8px;
+                    background: #ffffff;
+                    width: 42px;
+                    display: block;
+                    float: left;
+                    text-align: center;
+                    border-radius: 3px;
+            }
+        }
+        */
+}
+@media (min-width: 481px) {
+  .navbar ul.language-select {
+    display: block;
+  }
+}
+.navbar ul.language-select li {
+  float: left;
+}
+.navbar ul.language-select li a {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 5px;
+  padding: 10px 12px;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+.navbar ul.language-select li a:hover {
+  color: #b5ae8a;
+}
+@media screen and (min-width: 992px) {
+  .navbar ul.language-select {
+    right: 100px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar ul.language-select {
+    right: 40px;
+    /*
+            li a {
+                    text-transform: uppercase;
+                    color: #1c1c1c;
+                    margin: 0 5px;
+                    padding: 8px 10px;
+                    background: #ffffff;
+                    width: 45px;
+                    display: block;
+                    float: left;
+                    text-align: center;
+                    border-radius: 3px;
+            }
+            */
+  }
+}
+.menu-link {
+  margin-top: 10px;
+  position: absolute;
+  left: 0;
+}
+#menu {
+  background: #2f2f2f;
+  border-right: 1px solid #a79677;
+}
+#menu .logo {
+  height: 74px;
+  color: #a79677;
+  font-weight: 400;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+#menu .logo .upper {
+  font-size: 26px;
+}
+#menu .logo .lower {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+#menu div.language {
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+@media (min-width: 480px) {
+  #menu div.language {
+    display: none;
+  }
+}
+#menu div.language h3 {
+  font-family: "Raleway", helvetica, arial, sans-serif;
+  color: #fff;
+  font-size: 18px;
+  opacity: 0.7;
+}
+#menu ul {
+  list-style: none;
+  padding: 0;
+}
+#menu ul li a {
+  color: #f4f4f4;
+  padding: 20px;
+  cursor: pointer;
+  display: block;
+  border-bottom: 1px solid #a79677;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+}
+#menu ul li a:hover {
+  text-decoration: none;
+  background: #494949;
+}
+#menu ul.language-select {
+  margin-top: 30px;
+}
+#menu ul.language-select li a {
+  border-bottom: 0;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 5px;
+  padding: 8px 10px;
+  border: 1px solid #fff;
+  width: 45px;
+  display: block;
+  float: left;
+  text-align: center;
+  border-radius: 3px;
+}
+#menu.panel {
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  z-index: 9999;
+  position: fixed;
+  left: -15.625em;
+  /*left or right and the width of your navigation panel*/
+  width: 15.625em;
+  /*should match the above value*/
+}
+.wrap {
+  position: relative;
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #menu,
+  .menu-link {
+    display: none;
+  }
+  .navbar .fw-container .fw-nav-wrap .fw-nav-menu {
+    display: block;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */

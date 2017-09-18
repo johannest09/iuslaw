@@ -1,3 +1,100 @@
-<h1>
-  {{title}}
-</h1>
+
+
+<nav id="menu" class="panel" role="navigation">
+    <div class="logo">
+        <div class="upper">IUS</div>
+        <div class="lower">{{ 'LAWFIRM' | translate }}</div>
+    </div>
+    <ul>
+        <li class="nav-item"><a class="nav-link" [routerLink]="'/employees' | localize" [routerLinkActive]="['router-link-active']">{{'NAVIGATION.EMPLOYEES' | translate}}</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="'/practice-areas' | localize" [routerLinkActive]="['router-link-active']">{{'NAVIGATION.PRACTICE-AREAS' | translate}}</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="'/posts' | localize" [routerLinkActive]="['router-link-active']">{{'NAVIGATION.NEWS' | translate}}</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="'/about' | localize" [routerLinkActive]="['router-link-active']">{{'NAVIGATION.ABOUT' | translate}} IUS</a></li>
+    </ul>
+    <div class="language">
+        <h3>Choose language</h3>
+        <ul class="language-select" >
+            <li *ngFor="let lang of translate.getLangs()">
+                <a href="javascript:;" (click)="changeLanguage(lang)">{{ lang }}</a>
+            </li>
+        </ul>
+    </div>
+    
+</nav>
+
+<div class="wrap push">
+    <header id="main-header">
+        <div class="navbar">
+            <div class="container">
+                <div class="fw-container">
+                    <div href="#menu" class="menu-link hamburger hamburger--spring">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                    <div class="fw-nav-wrap fw-nav-left">
+                        <nav id="fw-menu-primary" class="fw-site-navigation primary-navigation">
+                            <ul id="menu-primary-menu" class="fw-nav-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" [routerLink]="'/employees' | localize" [routerLinkActive]="['router-link-active']">{{'NAVIGATION.EMPLOYEES' | translate}}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" [routerLink]="'/practice-areas' | localize" [routerLinkActive]="['router-link-active']">{{'NAVIGATION.PRACTICE-AREAS' | translate}}</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                    </div>
+                    
+                    <div class="wrap-logo">
+                        <a class="nav-link logo-container" [routerLink]="'/' | localize" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">
+                            <div class="logo">
+                                <div class="upper">IUS</div>
+                                <div class="lower">{{ 'LAWFIRM' | translate }}</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fw-nav-wrap fw-nav-right">
+                        <nav id="fw-menu-secondary" class="fw-site-navigation secondary-navigation">
+                            <ul id="menu-secondary-menu" class="fw-nav-menu">
+                                <li class="nav-item"><a class="nav-link" [routerLink]="'/posts' | localize" [routerLinkActive]="['router-link-active']">{{'NAVIGATION.NEWS' | translate}}</a></li>
+                                <li class="nav-item"><a class="nav-link" [routerLink]="'/about' | localize" [routerLinkActive]="['router-link-active']">{{'NAVIGATION.ABOUT' | translate}} IUS</a></li>
+                            </ul>
+                        </nav>
+                        
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+            <ul class="language-select" >
+                <li *ngFor="let lang of translate.getLangs()">
+                    <a href="javascript:;" (click)="changeLanguage(lang)">{{ lang }}</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <router-outlet></router-outlet>
+
+    
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4><strong>IUS</strong> <span>{{ 'LAWFIRM' | translate }}</span></h4>
+                <address>
+                    <div class="loc">Smáratorg 3 &nbsp; | &nbsp; Turninn, 17. hæð &nbsp; | &nbsp; 201 Kópavogur</div>
+                    <a href="http://www.google.com/maps/place/64.102571,-21.880044" target="_blank" class="see-map"><i class="icon ion-location"></i> {{ 'SEEMAP' | translate }}</a>
+                </address>
+            </div>
+            <div class="col-md-6">
+                <div class="mail pull-right"><a href="javascript:;" [routerLink]="'/contact' | localize"><i class="icon ion-email"></i><span>{{ 'CONTACTUS' | translate }}</span></a></div>
+            </div>
+        </div>
+        
+    </div>
+</footer>
